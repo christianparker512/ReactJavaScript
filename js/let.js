@@ -32,3 +32,8 @@ printMyName('Chris', 50);
 
 const multiply = (number) => number *5;
 console.log(multiply(5));
+
+const person = {
+  name: 'Chris'
+}
+export default person;
