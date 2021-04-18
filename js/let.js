@@ -29,11 +29,31 @@ printMyName('Chris', 50);
 //   return number *2;
 // }
 // console.log(multiply(2));
+//
+// const multiply = (number) => number *5;
+// console.log(multiply(5));
+//
+// const person = {
+//   name: 'Chris'
+// }
+// export default person;
 
-const multiply = (number) => number *5;
-console.log(multiply(5));
+// Not working because I need to do es6 babel
+class Human {
+   gender='male';
 
-const person = {
-  name: 'Chris'
+  printGender = () => {
+    console.log(this.gender);
+  }
 }
-export default person;
+class Person extends Human{
+  name = 'Chris';
+  gender= 'female';
+
+  printMyName = () => {
+    console.log(this.name);
+  }
+}
+const person = new Person();
+person.printMyName();
+person.printGender();
