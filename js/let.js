@@ -24,3 +24,11 @@ const printMyName = (name, age) => {
   console.log(name, age);
 }
 printMyName('Chris', 50);
+
+// const multiply = (number)=> {
+//   return number *2;
+// }
+// console.log(multiply(2));
+
+const multiply = (number) => number *5;
+console.log(multiply(5));
