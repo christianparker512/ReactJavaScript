@@ -81,3 +81,17 @@ console.log(b)
 const numbersDestructuring =[1,2,3];
 [num1, ,num3] = numbersDestructuring;
 console.log(num1,num3);
+
+const person2 = {
+  name: 'Chris'
+};
+const secondPerson = person2;
+person.name = "chris";
+console.log(secondPerson);
+
+const numbersArray = [1,2,3];
+const doubleNumArray = numbersArray.map((num) => {
+  return num *2;
+});
+console.log(numbersArray);
+console.log(doubleNumArray);
